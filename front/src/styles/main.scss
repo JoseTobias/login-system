@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input {
+  border: {
+    bottom: 2px solid rgba(52, 73, 94, 0.4);
+    left: none;
+    right: none;
+    top: none;
+  };
+  border-radius: 2px;
+  outline: none;
+  &:focus {
+    border-bottom-color: #34495E;
+  }
+  &.invalid {
+    border-color: red;
+  }
+}
+
+.error {
+  min-width: 400px;
+  font-weight: bold;
+  background-color: #fff;
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: red;
+  margin-bottom: 20px;
+  text-align: center;
+  @media (max-width: 576px) {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+.form-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 30px;
+  min-width: 400px;
+  border-radius: 10px;
+  @media (max-width: 576px) {
+    min-width: auto;
+    width: 100%;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    .group {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+      input {
+        margin-top: 10px;
+        flex: 1;
+      }
+      .button {
+        align-self: center;
+      }
+    }
+    .foot-lnk {
+      margin-top: 20px;
+    }
+  }
+}
+
+.button {
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background-color: #34495E;
+  color: #fff;
+  font-weight: bold;
+  width: fit-content;
+  padding: 10px 30px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+a {
+  color: #41B883;
+  text-decoration: none;
+  &:hover {
+    color: #34495E;
+  }
+}
+
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.container {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 15px;
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
