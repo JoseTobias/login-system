@@ -42,3 +42,9 @@ Caso queira executar no ambiente de desenvolvimento:
 ```
 npm run serve
 ```
+
+# Sobre o projeto
+É um sistema de login que possui as funcionalidades:
+- Cadastro: Cadastra o usuário no sistema.
+- Login: Faz o login do usuário cadastrado.
+- Updatre: Faz a atualização dos dados se o usuário que fizer o login desejar.
